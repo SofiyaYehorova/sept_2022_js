@@ -1,0 +1,19 @@
+.product-card{
+    width: 100%;
+    background: lightpink;
+}
+
+
+.product-title{
+text-align: center;
+    background: plum;
+}
+
+img{
+    width: 200px;
+}
+.product-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
