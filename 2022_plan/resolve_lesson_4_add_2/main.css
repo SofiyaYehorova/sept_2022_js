@@ -1,0 +1,18 @@
+body {
+    margin: 0 auto;
+}
+
+.users-box {
+    width: 100%;
+    background: plum;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-block {
+    width: 45%;
+
+    border: 2px solid orange;
+}
+
