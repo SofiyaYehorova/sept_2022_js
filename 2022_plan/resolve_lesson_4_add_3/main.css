@@ -1,0 +1,9 @@
+
+.wrap{
+    width: 100%;
+    display: flex;
+    }
+
+.post-card{
+    width: 25%;
+}
