@@ -72,12 +72,12 @@
 
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
 
-// let name=prompt('input your name')
-// console.log(name);
-//
-// let middleName=prompt('input your middleName')
-// console.log(middleName);
-//
-// let yearOfBirth=prompt('input your year of birth')
-// console.log(yearOfBirth);
+let name=prompt('input your name')
+console.log(name);
+
+let middleName=prompt('input your middleName')
+console.log(middleName);
+
+let yearOfBirth=+prompt('input your year of birth')
+console.log(yearOfBirth);
 
