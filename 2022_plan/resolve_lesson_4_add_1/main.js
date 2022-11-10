@@ -292,10 +292,10 @@ let books = [
 
 // -знайти наібльшу книжку.
 
-let maxBook=books[0];
+// let maxBook=books[0];
 // for (const book of books) {
 //     if(book.pages>maxBook.pages){
-//         maxBook=book.pages
+//         maxBook=book
 //     }
 // }
 // console.log(maxBook);
@@ -306,14 +306,22 @@ let maxBook=books[0];
 // let maxGenre=books[0];
 // for (const book of books) {
 //     if(book.genre>maxGenre.genre){
-//         maxGenre=book.genre
+//         maxGenre=book;
 //     }
 // }
 // console.log(maxGenre);
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //
 // - знайти книжку/ки з найдовшою назвою
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// let maxNameBook=books[0];
+// for (const maxNameBookElement of books) {
+//     if(maxNameBookElement.name>maxNameBook.name){
+//         maxNameBook=maxNameBookElement
+//     }
+// }
+// console.log(maxNameBook);
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // - знайти книжку/ки які писали 2 автори
 // - знайти книжку/ки які писав 1 авторA
