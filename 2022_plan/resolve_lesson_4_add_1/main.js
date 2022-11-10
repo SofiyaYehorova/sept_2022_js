@@ -269,26 +269,26 @@
 
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 
-let books = [
-    {
-        name: 'Морський ястріб',
-        pages: 310,
-        author: ['Рафаель Сабатіні'],
-        genre: ['пригоди']
-    },
-    {
-        name: 'Динозаври',
-        pages: 18,
-        author: ['Tasha Percy'],
-        genre: ['дитячі']
-    },
-    {
-        name: 'Велика книга почуттів',
-        pages: 250,
-        author: ['Ґжежож Касдепке'],
-        genre: ['дитячі', 'оповідіння', 'пригоди']
-    }
-]
+// let books = [
+//     {
+//         name: 'Морський ястріб',
+//         pages: 310,
+//         author: ['Рафаель Сабатіні', 'Ґжежож Касдепке', 'Tasha Percy' ],
+//         genre: ['пригоди']
+//     },
+//     {
+//         name: 'Динозаври',
+//         pages: 18,
+//         author: ['Tasha Percy'],
+//         genre: ['дитячі']
+//     },
+//     {
+//         name: 'Велика книга почуттів',
+//         pages: 250,
+//         author: ['Ґжежож Касдепке'],
+//         genre: ['дитячі', 'оповідіння', 'пригоди']
+//     }
+// ]
 
 // -знайти наібльшу книжку.
 
@@ -302,26 +302,41 @@ let books = [
 
 // - знайти книжку/ки з найбільшою кількістю жанрів
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // let maxGenre=books[0];
 // for (const book of books) {
-//     if(book.genre>maxGenre.genre){
+//     if(book.genre.length>maxGenre.genre.length){
 //         maxGenre=book;
 //     }
 // }
 // console.log(maxGenre);
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 //
 // - знайти книжку/ки з найдовшою назвою
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 // let maxNameBook=books[0];
 // for (const maxNameBookElement of books) {
-//     if(maxNameBookElement.name>maxNameBook.name){
+//     if(maxNameBookElement.name.length>maxNameBook.name.length){
 //         maxNameBook=maxNameBookElement
 //     }
 // }
 // console.log(maxNameBook);
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // - знайти книжку/ки які писали 2 автори
+
+// let twoAuthors=books[0];
+// for (const twoAuthor of books) {
+//     if(twoAuthor.author.length>twoAuthors.author.length){
+//         twoAuthors=twoAuthor
+//     }
+// }
+// console.log(twoAuthors);
+
 // - знайти книжку/ки які писав 1 авторA
+
+// let minAuthors=books[0];
+// for (const minAuthor of books){
+//     if(minAuthor.author.length<minAuthors.author.length){
+//         minAuthors=minAuthor
+//     }
+// }
+// console.log(minAuthors);
