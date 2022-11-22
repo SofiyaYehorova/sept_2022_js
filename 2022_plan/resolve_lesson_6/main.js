@@ -189,7 +189,7 @@ let deckOfCards = [
 
 // - всі трефи від 9 та більше
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// const filterOfClubs = deckOfCards.filter(card => card.cardSuit === 'clubs' && card.value >= 9 ||
+// const filterOfClubs = deckOfCards.filter(card => card.cardSuit === 'clubs' && card.value >= '9' ||
 //     typeof card.value === 'string' && card.cardSuit === 'clubs');
 // console.log(filterOfClubs);
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -211,17 +211,4 @@ let deckOfCards = [
 //     clubs:[]
 // }
 
-const reduce = deckOfCards.reduce(function (accumulator, card) {
-    if (card.cardSuit === 'spade') {
-        accumulator.spades.push(card);
-    }if (card.cardSuit === 'diamond') {
-        accumulator.diamonds.push(card);
-    }if (card.cardSuit === 'heard') {
-        accumulator.heards.push(card);
-    } else if (card.cardSuit === 'clubs'){
-        accumulator.clubs.push(card)
-    }
-    return accumulator;
-}, {spades: [], diamonds: [], heards: [], clubs: []});
-
-console.log(reduce);
+//
