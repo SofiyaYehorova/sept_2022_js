@@ -123,44 +123,44 @@
 // описати колоду карт
 
 let deckOfCards = [
-    {cardSuit: 'spade', value: '6', color: 'black'},
-    {cardSuit: 'spade', value: '7', color: 'black'},
-    {cardSuit: 'spade', value: '8', color: 'black'},
-    {cardSuit: 'spade', value: '9', color: 'black'},
-    {cardSuit: 'spade', value: '10', color: 'black'},
+    {cardSuit: 'spade', value: 6, color: 'black'},
+    {cardSuit: 'spade', value: 7, color: 'black'},
+    {cardSuit: 'spade', value: 8, color: 'black'},
+    {cardSuit: 'spade', value: 9, color: 'black'},
+    {cardSuit: 'spade', value: 10, color: 'black'},
     {cardSuit: 'spade', value: 'jack', color: 'black'},
     {cardSuit: 'spade', value: 'queen', color: 'black'},
     {cardSuit: 'spade', value: 'king', color: 'black'},
     {cardSuit: 'spade', value: 'ace', color: 'black'},
     {cardSuit: 'spade', value: 'joker', color: 'black'},
 
-    {cardSuit: 'diamond', value: '6', color: 'red'},
-    {cardSuit: 'diamond', value: '7', color: 'red'},
-    {cardSuit: 'diamond', value: '8', color: 'red'},
-    {cardSuit: 'diamond', value: '9', color: 'red'},
-    {cardSuit: 'diamond', value: '10', color: 'red'},
+    {cardSuit: 'diamond', value: 6, color: 'red'},
+    {cardSuit: 'diamond', value: 7, color: 'red'},
+    {cardSuit: 'diamond', value: 8, color: 'red'},
+    {cardSuit: 'diamond', value: 9, color: 'red'},
+    {cardSuit: 'diamond', value: 10, color: 'red'},
     {cardSuit: 'diamond', value: 'jack', color: 'red'},
     {cardSuit: 'diamond', value: 'queen', color: 'red'},
     {cardSuit: 'diamond', value: 'king', color: 'red'},
     {cardSuit: 'diamond', value: 'ace', color: 'red'},
     {cardSuit: 'diamond', value: 'joker', color: 'red'},
 
-    {cardSuit: 'heard', value: '6', color: 'red'},
-    {cardSuit: 'heard', value: '7', color: 'red'},
-    {cardSuit: 'heard', value: '8', color: 'red'},
-    {cardSuit: 'heard', value: '9', color: 'red'},
-    {cardSuit: 'heard', value: '10', color: 'red'},
+    {cardSuit: 'heard', value: 6, color: 'red'},
+    {cardSuit: 'heard', value: 7, color: 'red'},
+    {cardSuit: 'heard', value: 8, color: 'red'},
+    {cardSuit: 'heard', value: 9, color: 'red'},
+    {cardSuit: 'heard', value: 10, color: 'red'},
     {cardSuit: 'heard', value: 'jack', color: 'red'},
     {cardSuit: 'heard', value: 'queen', color: 'red'},
     {cardSuit: 'heard', value: 'king', color: 'red'},
     {cardSuit: 'heard', value: 'ace', color: 'red'},
     {cardSuit: 'heard', value: 'joker', color: 'red'},
 
-    {cardSuit: 'clubs', value: '6', color: 'black'},
-    {cardSuit: 'clubs', value: '7', color: 'black'},
-    {cardSuit: 'clubs', value: '8', color: 'black'},
-    {cardSuit: 'clubs', value: '9', color: 'black'},
-    {cardSuit: 'clubs', value: '10', color: 'black'},
+    {cardSuit: 'clubs', value: 6, color: 'black'},
+    {cardSuit: 'clubs', value: 7, color: 'black'},
+    {cardSuit: 'clubs', value: 8, color: 'black'},
+    {cardSuit: 'clubs', value: 9, color: 'black'},
+    {cardSuit: 'clubs', value: 10, color: 'black'},
     {cardSuit: 'clubs', value: 'jack', color: 'black'},
     {cardSuit: 'clubs', value: 'queen', color: 'black'},
     {cardSuit: 'clubs', value: 'king', color: 'black'},
@@ -174,7 +174,7 @@ let deckOfCards = [
 
 // - всі шістки
 
-// const filterOfSix = deckOfCards.filter(card => card.value === '6');
+// const filterOfSix = deckOfCards.filter(card => card.value === 6);
 // console.log(filterOfSix);
 
 // - всі червоні карти
@@ -188,11 +188,11 @@ let deckOfCards = [
 // console.log(filterOfDiamond);
 
 // - всі трефи від 9 та більше
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// const filterOfClubs = deckOfCards.filter(card => card.cardSuit === 'clubs' && card.value >= '9' ||
+
+// const filterOfClubs = deckOfCards.filter(card => card.cardSuit === 'clubs' && card.value >= 9 ||
 //     typeof card.value === 'string' && card.cardSuit === 'clubs');
 // console.log(filterOfClubs);
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 // {
 //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
@@ -211,4 +211,20 @@ let deckOfCards = [
 //     clubs:[]
 // }
 
-//
+const reduce = deckOfCards.reduce(function (accumulator, cardSuite) {
+    if (cardSuite.cardSuit === 'spade') {
+        accumulator.spades.push(cardSuite);
+    } else if (cardSuite.cardSuit === 'diamond') {
+        accumulator.diamonds.push(cardSuite);
+    } else if (cardSuite.cardSuit === 'heard') {
+        accumulator.hearts.push(cardSuite);
+    } else if (cardSuite.cardSuit === 'clubs') {
+        accumulator.clubs.push(cardSuite)
+    }
+    return accumulator
+}, {spades: [], diamonds: [], hearts: [], clubs: []}
+);
+console.log(reduce);
+
+
+
