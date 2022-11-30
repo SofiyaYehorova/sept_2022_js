@@ -6,22 +6,31 @@
 //
 // console.log(rectangleArea(5, 10));
 
+// let rectangleArea=(a,b)=>a*b;
+// console.log(rectangleArea(5, 10));
+
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 
-// const Pi=3.14;
+// const Pi = 3.14;
 // function circleArea (r){
 //     return Pi*r*r;
 // }
 //
 // console.log(circleArea(5));
 
+// const circleArea = (r) =>Math.PI*Math.pow(r, 2);
+// console.log(circleArea(5));
+
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
-// function cylinderArea(r, h){
-//     return 2*Pi*r*(h+r);
+// function cylinderArea(r, h) {
+//     return 2 * Pi * r * h;
 // }
 //
 // console.log(cylinderArea(5, 2));
+//
+// let cylinderArea1 = (r, h) => 2 * Math.PI * r * h;
+// console.log(cylinderArea1(5, 2));
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
@@ -54,12 +63,12 @@
 //     return document.write(`<p>${text}</p>`)
 // }
 //
-// paragraph('hello')
+// paragraph('hello');
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
 // function structureUl(text){
-//     return document.write(`
+//     document.write(`
 // <ul>
 // <li>${text}</li>
 // <li>${text}</li>
@@ -119,11 +128,12 @@
 // - створити функцію яка повертає найменьше число з масиву
 
 // let numbers = [0, 10, 15, -80, 17];
-// function minNum(array){
-//     let min=array[0];
+//
+// function minNum(array) {
+//     let min = array[0];
 //     for (const arrayElement of array) {
-//         if(min>arrayElement){
-//            min=arrayElement;
+//         if (arrayElement < min) {
+//             min = arrayElement;
 //         }
 //     }
 //     return min;
