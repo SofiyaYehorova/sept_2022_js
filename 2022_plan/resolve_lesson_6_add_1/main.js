@@ -200,18 +200,105 @@
 // document.writeln(cutString(str, 5)) // 'Сила тяжести приложена к центру'
 
 // let str = "Сила тяжести приложена к центру масс тела";
-// function cutString(str, n){
-//     const split = str.split(' ');
-//     // const num = str.remove;
-//     // console.log(split);
-// }
+// const cutString = (str, n) => str.split(' ').splice(0, n);
 //
-// console.log(cutString(str));
+// console.log(cutString(str, 5));
 
 // -стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+
+// let books = [
+//     {
+//         name: 'Морський ястріб',
+//         pages: 310,
+//         author: ['Рафаель Сабатіні', 'Ґжежож Касдепке', 'Tasha Percy'],
+//         genre: ['пригоди']
+//     },
+//     {
+//         name: 'Динозаври',
+//         pages: 18,
+//         author: ['Tasha Percy'],
+//         genre: ['дитячі']
+//     },
+//     {
+//         name: 'Велика книга почуттів',
+//         pages: 250,
+//         author: ['Ґжежож Касдепке'],
+//         genre: ['дитячі', 'оповідіння', 'пригоди']
+//     }
+// ]
+
 // -знайти наібльшу книжку.
+
+// function maxBook(array) {
+//     let maxBook = books[0];
+//     for (const book of books) {
+//         if (book.pages > maxBook.pages) {
+//             maxBook = book
+//         }
+//     }
+//     return maxBook;
+// }
+//
+// console.log(maxBook(books));
+
 // - знайти книжку/ки з найбільшою кількістю жанрів
+
+// function maxGenre(array){
+//     let maxGenre=books[0];
+//     for (const book of books) {
+//         if(book.genre.length>maxGenre.genre.length){
+//             maxGenre=book;
+//         }
+//     }
+//     return maxGenre;
+// }
+//
+// console.log(maxGenre(books));
+
 // - знайти книжку/ки з найдовшою назвою
+
+// function maxNameBook(array){
+//     let maxNameBook=books[0];
+//     for (const maxNameBookElement of books) {
+//         if(maxNameBookElement.name.length>maxNameBook.name.length){
+//             maxNameBook=maxNameBookElement
+//         }
+//     }
+//     return maxNameBook;
+// }
+//
+// console.log(maxNameBook(books));
+
 // - знайти книжку/ки які писали 2 автори
+
+// function twoAuthors(array) {
+//     let twoAuthors = books[0];
+//     for (const twoAuthor of books) {
+//         if (twoAuthor.author.length > twoAuthors.author.length) {
+//             twoAuthors = twoAuthor;
+//         }
+//     }
+//     return twoAuthors;
+// }
+//
+// console.log(twoAuthors(books));
+
 // - знайти книжку/ки які писав 1 автор
+
+// function minAuthors(array) {
+//     let minAuthors = books[0];
+//     for (const minAuthor of books) {
+//         if (minAuthor.author.length < minAuthors.author.length) {
+//             minAuthors = minAuthor;
+//         }
+//     }
+//     return minAuthors;
+// }
+//
+// console.log(minAuthors(books));
+
 // - вісортувати книжки по кількості сторінок по зростанню
+
+// const sort = books.sort((a, b)=>a.pages-b.pages);
+//
+// console.log(sort);
