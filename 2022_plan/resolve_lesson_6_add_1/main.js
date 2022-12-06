@@ -8,6 +8,17 @@
 // }
 // console.log(cutString(str, 3));
 
+//  function cutString(str, n){
+//      let arr = [];
+//      for (let i = 0; i < str.length; i+=n) {
+//          arr.push(str.slice(i, n + i));
+//      }
+//      return arr;
+//  }
+//
+// console.log(cutString(str, 3));
+
+
 // - Напишіть функцію delete_characters(str, length), яка повертає підрядок, що складається із зазначеної кількості символів.
 //     let str = 'Каждый охотник желает знать';
 // document.writeln(delete_characters(str, 7)); // Каждый
@@ -19,6 +30,13 @@
 // }
 //
 // console.log(delete_characters(str, 7));
+
+// function delete_characters(str, lenght){
+//     return str.slice(0, lenght)
+// }
+//
+// const deleteCharacters = delete_characters(str, 7);
+// console.log(deleteCharacters);
 
 // - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами. При цьому всі символи
 // рядка необхідно перевести у верхній регістр.
@@ -39,6 +57,13 @@
 //         return str[0].toUpperCase()+str.substring(1)
 //         }
 // console.log(toUpperCase('ghbds'));
+
+
+// function toUpperCase(str){
+//     return str[0].toUpperCase() + str.slice(1);
+// }
+//
+// console.log(toUpperCase('gjskir'));
 
 // - Дано список імен.
 // let n1 = 'Harry..Potter'
@@ -107,7 +132,7 @@
 // let email2 = 'someeMAIL@gmail.com';
 // let email3 = 'someeMAIL@i.ua';
 // let email4 = 'some.email@gmail.com';
-//
+
 // function validator(email) {
 //     let result = false;
 //     if (email.indexOf('@') > -2 && email.indexOf('.' > 2)) {
@@ -115,11 +140,20 @@
 //     }
 //     return result;
 // }
+
+// function validator1(str1) {
+// let str=str1.toLowerCase()
+//     if(!str.startsWith('@') && str.includes('@') && str.includes('.', str.indexOf('@')+3)){
+//         console.log('ok');
+//     }else {
+//         console.log('no');
+//     }
+// }
 //
-// console.log(validator(email1));
-// console.log(validator(email2));
-// console.log(validator(email3));
-// console.log(validator(email4));
+// console.log(validator1(email1));
+// console.log(validator1(email2));
+// console.log(validator1(email3));
+// console.log(validator1(email4));
 
 // Примітка
 // Для тих, хто дуже розумний, та почне використовувати регулярні вирази одразу "ні". Своїм мозком подумайте над протоколом, з
