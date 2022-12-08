@@ -170,46 +170,46 @@
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
-class Cinderella{
-    constructor(name, age, footSize) {
-        this.name = name;
-        this.age = age;
-        this.footSize = footSize;
-    }
-}
+// class Cinderella{
+//     constructor(name, age, footSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.footSize = footSize;
+//     }
+// }
+//
+// let cinderella1 = new Cinderella('sofiya', 37, 37);
+// let cinderella2 = new Cinderella('liliya', 35, 39);
+// let cinderella3 = new Cinderella('lesja', 54, 36);
+// let cinderella4 = new Cinderella('tetjana', 60, 38);
+// let cinderella5 = new Cinderella('olja', 36, 41);
+// let cinderella6 = new Cinderella('galia', 30, 35);
+// let cinderella7 = new Cinderella('ira', 32, 37);
+// let cinderella8 = new Cinderella('olya', 70, 35);
+// let cinderella9 = new Cinderella('lileya', 5, 30);
+// let cinderella10 = new Cinderella('anna', 4, 29);
 
-let cinderella1 = new Cinderella('sofiya', 37, 37);
-let cinderella2 = new Cinderella('liliya', 35, 39);
-let cinderella3 = new Cinderella('lesja', 54, 36);
-let cinderella4 = new Cinderella('tetjana', 60, 38);
-let cinderella5 = new Cinderella('olja', 36, 41);
-let cinderella6 = new Cinderella('galia', 30, 35);
-let cinderella7 = new Cinderella('ira', 32, 37);
-let cinderella8 = new Cinderella('olya', 70, 35);
-let cinderella9 = new Cinderella('lileya', 5, 30);
-let cinderella10 = new Cinderella('anna', 4, 29);
-
-let arrCinderellas = [];
-
-arrCinderellas.push(cinderella1, cinderella2, cinderella3, cinderella4, cinderella5, cinderella6, cinderella7, cinderella8, cinderella9, cinderella10)
-console.log(arrCinderellas);
-
-class Prince{
-    constructor(name, age, findfootSize) {
-        this.name = name;
-        this.age = age;
-        this.findfootSize = findfootSize;
-    }
-}
-
-let prince = new Prince('mark', 20, 30);
-
-function find(array, prince){
-    for (const element of array) {
-        if(prince.findfootSize===element.footSize){
-            return `my Cinderella is ${element.name}`
-        }
-    }
-}
-
-console.log(find(arrCinderellas, prince));
+// let arrCinderellas = [];
+//
+// arrCinderellas.push(cinderella1, cinderella2, cinderella3, cinderella4, cinderella5, cinderella6, cinderella7, cinderella8, cinderella9, cinderella10)
+// console.log(arrCinderellas);
+//
+// class Prince{
+//     constructor(name, age, findfootSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.findfootSize = findfootSize;
+//     }
+// }
+//
+// let prince = new Prince('mark', 20, 30);
+//
+// function find(array, prince){
+//     for (const element of array) {
+//         if(prince.findfootSize===element.footSize){
+//             return `my Cinderella is ${element.name}`
+//         }
+//     }
+// }
+//
+// console.log(find(arrCinderellas, prince));
