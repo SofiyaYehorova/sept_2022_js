@@ -27,56 +27,61 @@
 // }
 
 class UserInfo {
-    constructor(id, name, username, email, address, phone, website, company) {
-        this.id = id;
-        this.name = name;
-        this.username = username;
-        this.email = email;
-        this.address = address;
-        this.phone = phone;
-        this.website = website;
-        this.company = company;
-    }
-    constructorAddress(street, suite, city,zipcode, geo) {
+
+    constructorAddress (street, suite, city,zipcode, geo) {
         this.street = street;
         this.suite=suite
         this.city = city;
         this.zipcode = zipcode;
         this.geo = geo;
     }
-
-    constructorGeo(lat, lng) {
-        this.lat = lat;
-        this.lng = lng;
-    }
     constructorCompany(companyName, catchPhrase, bs) {
-        this.companyName = companyName;
-        this.catchPhrase = catchPhrase;
-        this.bs = bs;
+            this.companyName = companyName;
+            this.catchPhrase = catchPhrase;
+            this.bs = bs;
+        }
+
+        /**
+     *
+     * @param {number} id
+     * @param {string} name
+     * @param {string} username
+     * @param {string} email
+     * @param {string} address
+     * @param {number} phone
+     * @param {string} website
+     * @param {string} company
+     */
+
+    constructor(id, name, username, email, address, phone, website, company ) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.email = email;
+        this.address = {};
+        this.phone = phone;
+        this.website = website;
+        this.company = {this.constructorCompany}
+
     }
 
+
+    // constructorGeo(lat, lng) {
+    //     this.lat = lat;
+    //     this.lng = lng;
+    // }
+    //
 }
 
-// let userInfo1 = new UserInfo( 1, 'Leanne Graham', 'Bret', 'Sincere@april.biz',
- // address: {
-//         street: 'Kulas Light',
-//         suite: 'Apt. 556',
-//         city: 'Gwenborough',
-//         zipcode: '92998-3874',
-//         geo: {
-//         lat: '-37.3159',
-//         lng: '81.1496'
-//     }
-// },
-//     phone: '1-770-736-8031 x56442',
-//     website: 'hildegard.org',
-//     company: {
-//          name: 'Romaguera-Crona',
-//          catchPhrase: 'Multi-layered client-server neural-net',
-//          bs: 'harness real-time e-markets'
-//          )
+let userInfo1 = new UserInfo( 1, 'Leanne Graham', 'Bret', 'Sincere@april.biz', {}, '1-770-736-8031 x56442', 'hildegard.org',
+    {
+        name: 'Romaguera-Crona',
+        catchPhrase: 'Multi-layered client-server neural-net',
+        bs: 'harness real-time e-markets'
+    }
+)
 
-console.log(UserInfo);
+console.log(userInfo1);
 
 
 
