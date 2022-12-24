@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.commentsDiv{
+    width: 100%;
+    min-height: 40%;
+    margin-top: 5%;
+
+
+    font-size: 1.2em;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+}
+
+.comment{
+    width: 17%;
+    padding: 1%;
+
+    border: 3px solid red;
+    background: antiquewhite;
+    box-sizing: border-box;
+}
